@@ -5,7 +5,7 @@
 GitHub Actions is a **CI/CD platform built into GitHub**.  
 It allows you to **automate workflows** directly from your repository.  
 
-**Use cases include:**
+Use cases include:
 - Running tests on every commit.  
 - Building and publishing Docker images.  
 - Deploying apps to AWS, Kubernetes, etc.  
