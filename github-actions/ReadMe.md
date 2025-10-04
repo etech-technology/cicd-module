@@ -142,7 +142,7 @@ Useful for test reports, Terraform plan, or build outputs.
 
 ---
 
-## Live Demo Idea
+## Live Demo 
 
 1. Create `.github/workflows/hello.yml`.
 2. Push to GitHub.
