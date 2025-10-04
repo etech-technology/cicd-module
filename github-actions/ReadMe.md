@@ -117,11 +117,11 @@ Useful for test reports, Terraform plan, or build outputs.
 
 ## 7. How It All Fits Together
 
-✅ **Event**: A push happens
-✅ **Workflow**: YAML file defines what to do
-✅ **Jobs**: Run on GitHub-hosted runners
-✅ **Steps**: Run commands or pre-built actions
-✅ **Secrets/Artifacts**: Pass secure data or files between jobs
+**Event**: A push happens
+**Workflow**: YAML file defines what to do
+*Jobs**: Run on GitHub-hosted runners
+**Steps**: Run commands or pre-built actions
+**Secrets/Artifacts**: Pass secure data or files between jobs
 
 
 ## 8. Best Practices
@@ -147,12 +147,4 @@ Useful for test reports, Terraform plan, or build outputs.
 1. Create `.github/workflows/hello.yml`.
 2. Push to GitHub.
 3. Show students how the workflow runs under the **Actions tab**.
-
----
-
-```
----
-
-Would you like me to also design a **simple diagram (in PNG/SVG)** that visually explains:  
-**Event → Workflow → Job → Runner → Steps** so you can embed it in your GitHub repo or slides?
 ```
