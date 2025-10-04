@@ -1,9 +1,5 @@
-Perfect 👍 — here’s your **teaching notes on GitHub Actions** in clean Markdown format. You can drop this directly into your repo (e.g., `README.md` or `github-actions-intro.md`) and use it for your DevOps Masterclass.
-
----
-
 ````markdown
-# 📝 Introduction to GitHub Actions
+#  Introduction to GitHub Actions
 
 ## 1. What is GitHub Actions?
 GitHub Actions is a **CI/CD platform built into GitHub**.  
@@ -15,18 +11,18 @@ It allows you to **automate workflows** directly from your repository.
 - Deploying apps to AWS, Kubernetes, etc.  
 - Sending notifications (Slack, Teams, Email).  
 
-👉 Think of it as: *“Every time something happens in GitHub (push, PR, merge), we can automatically run steps/scripts without manual work.”*  
+Think of it as: *“Every time something happens in GitHub (push, PR, merge), we can automatically run steps/scripts without manual work.”*  
 
 ---
 
 ## 2. Core Concepts
 
-### 🔹 Workflow
+### Workflow
 - A YAML file that defines automation steps.  
 - Lives inside `.github/workflows/`.  
 - Example: `.github/workflows/ci.yml`.
 
-### 🔹 Events
+### Events
 - Workflows are triggered by **events**.  
 - Examples:
   - `push` → when code is pushed.  
@@ -34,18 +30,18 @@ It allows you to **automate workflows** directly from your repository.
   - `schedule` → run at specific times (like cron).  
   - `workflow_dispatch` → manual trigger.  
 
-### 🔹 Jobs
+### Jobs
 - A workflow is made up of **jobs**.  
 - Each job runs on a **runner** (VM or container).  
 - Example jobs: `test`, `build`, `deploy`.
 
-### 🔹 Steps
+### Steps
 - Inside jobs, you define **steps**.  
 - Steps can:
   - Run commands (`run:`).  
   - Use pre-built actions (`uses:`).  
 
-### 🔹 Runners
+###  Runners
 - The machine that executes your jobs.  
 - GitHub provides **hosted runners** (Linux, Windows, macOS).  
 - You can also set up **self-hosted runners** for custom environments.  
@@ -67,9 +63,9 @@ jobs:
         run: echo "Hello, GitHub Actions!"
 ````
 
-👉 Every push will run this workflow and print the message to logs.
+Every push will run this workflow and print the message to logs.
 
----
+
 
 ## 4. Using Actions
 
@@ -84,8 +80,6 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 ```
-
-👉 Teaching Point:
 
 * `uses:` = reusing someone’s automation.
 * `run:` = writing your own shell commands.
@@ -102,7 +96,7 @@ jobs:
   run: echo "My secret is ${{ secrets.MY_SECRET }}"
 ```
 
-👉 Never hardcode credentials in YAML. Always use Secrets.
+Never hardcode credentials in YAML. Always use Secrets.
 
 ---
 
@@ -129,7 +123,6 @@ Useful for test reports, Terraform plan, or build outputs.
 ✅ **Steps**: Run commands or pre-built actions
 ✅ **Secrets/Artifacts**: Pass secure data or files between jobs
 
----
 
 ## 8. Best Practices
 
@@ -149,7 +142,7 @@ Useful for test reports, Terraform plan, or build outputs.
 
 ---
 
-## ✅ Live Demo Idea
+## Live Demo Idea
 
 1. Create `.github/workflows/hello.yml`.
 2. Push to GitHub.
@@ -158,7 +151,6 @@ Useful for test reports, Terraform plan, or build outputs.
 ---
 
 ```
-
 ---
 
 Would you like me to also design a **simple diagram (in PNG/SVG)** that visually explains:  
